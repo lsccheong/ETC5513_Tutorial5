@@ -5,3 +5,17 @@ date: "2023-03-30"
 output: html_document
 ---
 
+```{r}
+# Libraries
+     library(tidyverse)
+     library(palmerpenguins)
+```
+
+```{r}
+# Examining the relationship between bill length and flipper length.
+library(palmerpenguins)
+data(package = 'palmerpenguins')
+ggplot(penguins, aes(x = bill_depth_mm , y = flipper_length_mm, color = species)) +
+  geom_point()
+```
+
